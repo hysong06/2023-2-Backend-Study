@@ -1,7 +1,8 @@
 # 1. 웹 프로토콜
 
 - 웹(The Web, W3, WWW, WorldWideWeb)
-- Protocol :  컴퓨터 또는 전자기기 간의 원활한 정보 통신을 위해 약속한 통신 규약<br>
+- Protocol :  컴퓨터 또는 전자기기 간의 원활한 정보 통신을 위해 약속한 통신 규약
+<br>
 ## 1) HTTP(HyperText Transfer Protocol)
 
 > 하이퍼텍스트를 효율적으로 교환하기 위해 맺은 _애플리케이션 계층_ 통신 규약
