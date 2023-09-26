@@ -61,12 +61,7 @@ Content-Length: 345
 (more data...)
 ```
 
-- Start-line : `[HTTP Method] [Request Target] [HTTP Version]`로 구성
-- Header
-- Empty-line
-- Body
-
-####  💡 HTTP Method
+#### 💡 HTTP Method
 
 - 요청의 목적 및 종류를 지시
 
