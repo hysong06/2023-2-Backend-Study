@@ -385,9 +385,15 @@ public class Gdsc3rdHwApplication {
 2023-10-03T20:04:51.680+09:00  INFO 38540 --- [           main] G.b.GDSC_3rd_HW.Gdsc3rdHwApplication     : name=classA object=GDSC.backend.GDSC_3rd_HW.ClassA@7f34a967
 2023-10-03T20:04:51.680+09:00  INFO 38540 --- [           main] G.b.GDSC_3rd_HW.Gdsc3rdHwApplication     : name=classB object=GDSC.backend.GDSC_3rd_HW.ClassB@77e80a5e
 2023-10-03T20:04:51.680+09:00  INFO 38540 --- [           main] G.b.GDSC_3rd_HW.Gdsc3rdHwApplication     : name=classC object=GDSC.backend.GDSC_3rd_HW.ClassC@1d8e2eea
+
+(...)
+
+2023-10-03T20:04:51.689+09:00  INFO 38540 --- [           main] G.b.GDSC_3rd_HW.Gdsc3rdHwApplication     : classA1 = GDSC.backend.GDSC_3rd_HW.ClassA@7f34a967
+2023-10-03T20:04:51.689+09:00  INFO 38540 --- [           main] G.b.GDSC_3rd_HW.Gdsc3rdHwApplication     : classA2 = GDSC.backend.GDSC_3rd_HW.ClassA@7f34a967
 ```
 
-Gdsc3rdHwApplication.class 파일을 실행한 결과의 일부로, 위와 같이 ClassA, ClassB, ClassC가 빈으로 등록되었음을 알 수 있다.
+Gdsc3rdHwApplication.class 파일을 실행한 결과의 일부이다. ClassA, ClassB, ClassC가 빈으로 정상 등록되었으며, 싱글톤이 보장되었음을 알 수 있다.
+
 아래는 실행결과의 전체이다.
 
 ```
