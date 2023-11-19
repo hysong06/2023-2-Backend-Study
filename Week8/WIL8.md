@@ -69,7 +69,7 @@ Hibernate:
 <img src="./img/1-GET.png">
 
 <img src="./img/2-PATCH.png">
-<img src="">
+
 <img src="./img/3-GET.png">
 
 <img src="./img/4-DELETE.png">
