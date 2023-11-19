@@ -21,7 +21,7 @@ JPA는 트랜잭션을 종료해 commit()이 호출될 때, 스냅샷으로부�
 ## 5) 지연 로딩 (Lazy Loading)
 
 즉시 로딩(Eager Loading)과 지연 로딩(Lazy Loading)을 지원한다.
-지연 로딩을 사용할 경우, 의존 관계에 있는 객체를 **직접적으로 이용하는 시점**에 쿼리를 전송하게 된다.
+지연 로딩을 사용할 경우, 의존 관계에 있는 객체를 직접적으로 이용하는 시점에 쿼리를 전송하게 된다.
 
 가령 `@ManyToOne(fetch = FetchType.LAZY)`으로 Hospital에 매핑되어 있는 MedicalDepartment를 조회할 때, Hospital을 조회하는 쿼리를 같이 전송하는 것이 아니라 Hospital의 프록시 객체를 받아두었다가 해당 Hospital 객체를 직접적으로 사용할 때 쿼리를 전송한다.
 만약 즉시 로딩을 사용한다면 MedicalDepartment 조회 시에 MedicalDepartment 조회 쿼리와 Hospital 조회 쿼리가 모두 전송된다.
@@ -59,22 +59,22 @@ Hibernate:
 ```
 
 <br>그런데 Service 계층에서 지연 로딩 전략으로 저장한 객체를 Controller 계층에서 사용하는 경우, 트랜잭션이 이미 닫혀 준영속 상태이기 때문에 정상적인 객체 조회가 불가능해진다.
-따라서 영속성 엔티티를 DTO로 변환해두는 것이 바람직하고, 필요하다면 JPQL의 Fetch Join, 또는 BatchSize 등을 사용할 수도 있다.
+따라서 영속성 엔티티를 DTO로 변환하여 사용하는 것이 바람직하고, 필요하다면 JPQL의 Fetch Join, 또는 BatchSize 등을 사용할 수도 있다.
 
 ***
 # \[2] 📖 프로그램 구현 과제
 
 ## 1) Update/Delete Hospital
 
-![[1-GET.png]]
+<img src="./img/1-GET.png">
 
-![[2-PATCH.png]]
+<img src="./img/2-PATCH.png">
+<img src="">
+<img src="./img/3-GET.png">
 
-![[3-GET.png]]
+<img src="./img/4-DELETE.png">
 
-![[4-DELETE.png]]
-
-![[5-GET.png]]
+<img src="./img/5-GET.png">
 
 ## 2) Update/Delete Reservation
 
